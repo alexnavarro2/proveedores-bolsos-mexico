@@ -1,6 +1,6 @@
 # BOLSO MX — Directorio de proveedores mexicanos de bolsos
 
-Portal B2B construido con Next.js, React, TypeScript, Tailwind CSS y Lucide. La primera versión usa `data/providers.json` como base de datos y está lista para migrar posteriormente a Supabase.
+Portal B2B construido con Next.js, React, TypeScript, Tailwind CSS y Lucide. La primera versión usa archivos JSON segmentados en `data/providers-1.json` a `data/providers-6.json` como base de datos y está lista para migrar posteriormente a Supabase.
 
 ## Funciones
 - Búsqueda por texto.
@@ -19,7 +19,7 @@ npm run dev
 Abre `http://localhost:3000`.
 
 ## Agregar proveedores
-Edita `data/providers.json`. Mantén un `slug` único y conserva los campos existentes. No inventes capacidades: usa `No confirmado` cuando no haya evidencia.
+Edita los archivos `data/providers-1.json` a `data/providers-6.json`. Mantén un `slug` único y conserva los campos existentes. No inventes capacidades: usa `No confirmado` cuando no haya evidencia.
 
 ## Subir a GitHub
 ```bash
