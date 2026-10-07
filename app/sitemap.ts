@@ -1,0 +1,1 @@
+import type {MetadataRoute} from 'next'; import {providers} from '@/lib/providers'; export default function sitemap():MetadataRoute.Sitemap{const base='https://TU-DOMINIO.vercel.app'; return [{url:base,lastModified:new Date()},{url:`${base}/comparar`,lastModified:new Date()},...providers.map(p=>({url:`${base}/proveedores/${p.slug}`,lastModified:new Date()}))]}
