@@ -1,0 +1,5 @@
+import './globals.css'
+import Link from 'next/link'
+import { Search, GitCompareArrows } from 'lucide-react'
+export const metadata={title:'Proveedores de Bolsos México',description:'Directorio B2B de fabricantes, maquiladores y mayoristas mexicanos de bolsos.'}
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="es"><body><header className="sticky top-0 z-20 border-b border-zinc-200 bg-white/90 backdrop-blur"><div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4"><Link href="/" className="font-black tracking-tight">BOLSO<span className="text-wine">MX</span></Link><nav className="flex gap-3"><Link className="btn-secondary" href="/"><Search size={16}/> Directorio</Link><Link className="btn-secondary" href="/comparar"><GitCompareArrows size={16}/> Comparar</Link></nav></div></header>{children}<footer className="mt-16 border-t border-zinc-200 py-8 text-center text-sm text-zinc-500">Directorio de proveedores mexicanos · Datos con nivel de confianza y fuentes públicas.</footer></body></html>}
